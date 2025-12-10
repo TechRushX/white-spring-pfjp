@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+        parties = ['pfjp', 'usp', 'nfp', 'cps', 'wpb', 'ind'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'pfjp': '#3f7bc1', 'usp': '#800080', 'nfp': '#000000', 'cps': '#E3000F', 'wpb': '#DCCA4A', 'ind': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+        partyNames = {'pfjp': 'PFJP', 'usp': 'USP', 'nfp': 'NFP', 'cps': 'CPS', 'wpb': 'WPB', 'ind': 'Independents'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
