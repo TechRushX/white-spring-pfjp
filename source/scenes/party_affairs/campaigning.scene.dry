@@ -11,12 +11,12 @@ tags: party_affairs
 
 Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
-- @workers: The urban working class, our traditional support base.
-- @new_middle: The "new middle class" of government employees and white-collar workers.
+- @workers: The urban working class, who have felt neglected by us in recent years.
+- @new_middle: The "new middle class" of government employees and white-collar workers, our traditional support base.
 - @old_middle: The "old middle class" of small independent businessmen and artisans.
-- @rural: Rural workers and small farmers, who have felt neglected by us in the past.
+- @rural: Rural workers and small farmers.
 - @unemployed: The unemployed.
-- @catholics: Catholics, who typically support the Center Party.
+- @bludish: The bludish, who typically support the Workers' Party of Bludia.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -24,47 +24,43 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: workers_spd += 6*(1-dissent); workers_spd -= 2 if unemployed >= 15; workers_spd -= 2 if unemployed >= 25; workers_spd += 6*(1-dissent) if wtb_adopted = 1; resources -= 1; workers_spd += 3*(1-dissent) if nationalization_progress >= 1;
+on-arrival: workers_pfjp += 6*(1-dissent); workers_pfjp -= 2 if unemployed >= 15; workers_pfjp -= 2 if unemployed >= 25; resources -= 1;
 
-We have increased our campaigning among the workers. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract workers. ?]
+We have increased our campaigning among the workers. [? if ricter_pfjp_leader == 1: They do not trust us as much ever since Ricter took over. ?]  [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?]
 
 @new_middle
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: new_middle_spd += 6*(1-dissent); new_middle_spd -= 4 if socialism <= 49 and peoples_party == 0; resources -= 1; peoples_party_support += 1;
+on-arrival: new_middle_pfjp += 6*(1-dissent); new_middle_pfjp -= 4 if manoly_pfjp_leader == 1; resources -= 1;
 
-We have increased our campaigning among the new middle class. [? if socialism <= 49 and peoples_party == 0: The popular antipathy towards socialism among this group makes our campaign more difficult. ?] [? if peoples_party > 0: As a people's party, we have an easier time increasing support among the middle class than before. ?]
-
+We have increased our campaigning among the new middle class.
 @old_middle
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: old_middle_spd += 5*(1-dissent); resources -= 1; old_middle_spd -= 3 if nationalism >= 51 and peoples_party == 0; peoples_party_support += 1
+on-arrival: old_middle_pfjp += 5*(1-dissent); resources -= 1; old_middle_pfjp -= 3 if bludish_support <= 51 and sebastian_pfjp_leader == 0
 
-We have increased our campaigning among the old middle class. [? if nationalism >= 51 and peoples_party == 0: The high levels of nationalism among this group make our campaign more difficult. ?] [? if peoples_party > 0: As a people's party, we have an easier time increasing support among the middle class than before. ?]
-
-@rural
+We have increased our campaigning among the old middle class. [? if old_middle_pfjp <= 51 and sebastian_pfjp_leader == 0: The high levels of anti-bludish sentiment among this group make our campaign more difficult, as long as we support equal rights for them. ?]
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: rural_spd += 5*(1-dissent); rural_spd -= 3*(1-dissent) if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_spd += 3*(1-dissent) if rural_policy >= 2
+on-arrival: rural_pfjp += 5*(1-dissent); rural_pfjp -= 3*(1-dissent) if sebastian_pfjp_leader == 0; resources -= 1; rural_pfjp -= 1*(1-dissent) if sebastian_resigned == 1
 
-We have increased our campaigning among farmers. [? if peoples_party == 0: We have not historically campaigned much among the farmers, and they do not trust us. ?][? if peoples_party > 0: As a people's party, we have an easier time increasing support among farmers than before. ?][? if rural_policy >= 2 : Our rural policies have made it easier for us to build support among farmers. ?]
+We have increased our campaigning among farmers. [? if sebastian_pfjp_leader == 0: Outside Sebastian, we have not historically campaigned much among the farmers, and they do not trust us. ?][? if sebastian_pfjp_leader = 1: With Sebastian at the head of the party, the rural folk finally trust us enough. ?][? if sebastian_resigned = 1: Epsecially since his resignation. They are now officially considered a lost cause electorally. ?]
 
 @unemployed
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: unemployed_spd += 6*(1-dissent); resources -= 1; unemployed_spd -= 3 if welfare < 0; unemployed_spd += 6*(1-dissent) if wtb_adopted = 1; unemployed_spd += 3*(1-dissent) if welfare >= 2;
+on-arrival: unemployed_pfjp += 6*(1-dissent); resources -= 1; unemployed_pfjp -= 4 if ricter_pfjp_leader = 1; unemployed_pfjp -= 2*(1-dissent) if sebastian_pfjp_leader == 1;
 
-We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
+We have increased our campaigning among the unemployed. [? if ricter_pfjp_leader == 1: Since the liberals are in charge of the party, it is hard to justify voting for us. ?][? if sebastian_pfjp == 1: With the moderates in charge of our party, it is easier to convince them then under Ricter. However, Manoly would still be the preffered candidate. ?]
 
-@catholics
+@bludish
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-view-if: peoples_party == 1
-on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
+on-arrival: bludish_spd += 6*(1-dissent); resources -= 1; bludish_pfjp -= 6 if sebastian_pfjp_leader == 1
 
-We have increased our campaigning among Catholics.
+We have increased our campaigning among the Bludish. [? if sebastian_pfjp_leader == 1: With Sebastian in charge, they are convinced of our betrayal to the them, and they do not take it lightly.
