@@ -11,6 +11,7 @@ card-image: img/sangerbund.jpg
 
 The Lachaven Times runs a veritable media empire, with many customers throughout every Sordish city and region. We could use Sebastian's connections with it for various purposes...
 
+- @media
 - @commercial
 - @campaign
 - @tv
@@ -58,8 +59,8 @@ Our new TV network has a mix of popular and political programming, and is provin
 @tv_3
 title: We must keep on building up our radio network.
 subtitle: It is now financially self-sufficient, and does not require any more resources.
-view-if: tv > 2 and tv <= 4
-on-arrival: tv += 1; new_middle_pfjp += 5*(1 - dissent); old_middle_pfjp += 4*(1 - dissent); workers_pfjp += 4*(1 - dissent); rural_pfjp += 3*(1 - dissent); unemployed_pfjp += 2*(1-dissent); socialism -= 3*(1 - dissent); bludish_rights == 3*(1 - dissent); pro_republic += 3*(1-dissent)
+view-if: tv >= 2 and tv <= 4
+on-arrival: tv += 1; new_middle_pfjp += 5*(1 - dissent); old_middle_pfjp += 4*(1 - dissent); workers_pfjp += 4*(1 - dissent); rural_pfjp += 3*(1 - dissent); unemployed_pfjp += 2*(1-dissent); socialism -= 3*(1 - dissent); bludish_rights += 3*(1 - dissent); pro_republic += 3*(1-dissent)
 
 Our TV network has become a successful tool for spreading our message.
 
@@ -69,6 +70,6 @@ subtitle: As television becomes more common, the novelty is beginning to wear of
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: tv >= 5
-on-arrival: radio += 1; resources -= 1; new_middle_spd += 3*(1 - dissent); old_middle_pfjp += 2*(1 - dissent); workers_pfjp += 3*(1 - dissent); rural_pfjp += 2*(1 - dissent); unemployed_pfjp += 2*(1-dissent); socialism -= 2*(1 - dissent); bludish_rights += 2*(1 - dissent); pro_republic += 2*(1-dissent)
+on-arrival: tv += 1; resources -= 1; new_middle_pfjp += 3*(1 - dissent); old_middle_pfjp += 2*(1 - dissent); workers_pfjp += 3*(1 - dissent); rural_pfjp += 2*(1 - dissent); unemployed_pfjp += 2*(1-dissent); socialism -= 2*(1 - dissent); bludish_rights += 2*(1 - dissent); pro_republic += 2*(1-dissent)
 
 We are continuing to invest in our TV network. Both commercial and political channels are becoming more prevalent, making it harder to spread our message amidst the competition.
