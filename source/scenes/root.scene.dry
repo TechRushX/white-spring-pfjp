@@ -48,6 +48,8 @@ Q.sebastian_pfjp_leader = 0
 
 Q.sebastian_resigned = 0
 
+Q.tv = 0
+
 // How hostile the left is towards our party
 Q.cps_hostility = 2
 Q.wpb_hostility = 1
@@ -192,6 +194,7 @@ Q.bludish_rights = 37;
 Q.socialism = 28;
 // how much does the public support the constitution of 1929?
 Q.pro_soll_const = 48;
+Q.pro_republic = 78;
 
 Q.emergency_rule = 0;
 
