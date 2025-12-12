@@ -9,11 +9,12 @@ card-image: img/sangerbund.jpg
 
 = Media
 
-The Lachaven Times runs a veritable media empire, with many customers throughout every Sordish city and region. We could use Sebastian's connections with it for various purposes...
+The Lachaven Times runs a veritable media empire, with many customers throughout every Sordish city and region. We could use Sebastian's connections within it for various purposes...
 
 - @media
 - @commercial
 - @campaign
+- @influence
 - @tv
 - @tv_2
 - @tv_3
@@ -35,6 +36,16 @@ subtitle: Our newspapers will focus on the electoral campaign.
 on-arrival: campaign_media += 1; new_middle_pfjp += 4*(1 - dissent); old_middle_pfjp += 2*(1-dissent)
 
 Our campaign media is mostly reaching the middle class who are already saturated with Reformist propaganda, but it must be doing *something*, or at least that is what we hope.
+
+@influence
+title: Increase our influence in the Lachaven Times.
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+view-if: sebastian_resigned == 0
+on-arrival: lachaven_times_influence += 1; resources -= 1
+
+We have increased our influence within the news organization. Sebastian and the Moderates are pleased, and their strength within the party only grows.
 
 @tv
 title: Why not fund a TV station?
