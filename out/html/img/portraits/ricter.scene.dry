@@ -1,0 +1,41 @@
+title: Frens Ricter
+is-pinned-card: true
+tags: advisor, reformist
+card-image: img/portraits/FrensRicter.jpg
+view-if: ricter_advisor = 0
+new-page: true 
+
+= Frens Ricter
+
+Frens is the leader of our party ever since the congress of 1949. He has continuously pushed for free market economics, bludish rights, and constitutional reform. He has strong business connections and relations, allowing us to gain their donations for our electoral causes.
+
+@oligarch_influence
+@business_donations
+@party_unity
+@root: Return to main
+@oligarch_influence
+title: Oligarch influence
+subtitle: We can increase our influence in the oligarchs. -1 resource.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if resources < 0: Not enough resources. ?]
+on-arrival: advisor_action_timer = 6; resources -= 1; labor_dissent += 10; left_dissent += 10;
+
+We have increased our influence in the oligarchs, which helps sway them away from other parties, like the USP or NFP. The progressives condemn this, arguing we should not fight fire with fire, but instead limit corporate influence as a whole. 
+
+@business_donations
+title: Business donations
+subtitle: We can attract corporate lobbying, in exchange of promises of supporting pro-business policies. +1 resource.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if business_relations <= 0 : The businesses aren't interested in supporting us. ?]
+on-arrival: advisor_action_timer = 6; resources += 1; labor_dissent += 10; left_dissent += 10
+
+We have attracted funding from several businesses, which hope we hold up to our end of the deal. Manoly has criticized our actions, saying that this is not behaviour for a party with "justice" in its name.
+
+@party_unity
+title: Emphasise party unity
+subtitle: Ricter is known as a unifying figure, and it is not without reason.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 
+on-arrival: advisor_action_timer = 6; labor_dissent -= 10; center_dissent -= 10; reformist_dissent -= 10; left_dissent -= 10
+
+Our party stands together in its quest for democratic reform. Our display of unity has attracted some voters to our side.
