@@ -79,7 +79,7 @@ Q.liberal_dissent = 0;
 Q.progressive_strength = 10;
 Q.progressive_dissent = 20;
 Q.moderates_strength = 10;
-Q.moderates_dissent = 5;
+Q.moderates_dissent = 10;
 
 // secret events...
 Q.unions_independent = 0;
