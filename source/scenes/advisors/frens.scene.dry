@@ -13,6 +13,8 @@ Frens is the leader of our party ever since the congress of 1949. He has continu
 - @business_donations
 - @party_unity
 - @root: Return to main
+
+@oligarch_influence
 title: Oligarch influence
 subtitle: We can increase our influence in the oligarchs. -1 resource.
 choose-if: advisor_action_timer <= 0
