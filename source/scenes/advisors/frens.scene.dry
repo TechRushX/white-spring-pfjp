@@ -9,11 +9,10 @@ new-page: true
 
 Frens is the leader of our party ever since the congress of 1949. He has continuously pushed for free market economics, bludish rights, and constitutional reform. He has strong business connections and relations, allowing us to gain their donations for our electoral causes.
 
-@oligarch_influence
-@business_donations
-@party_unity
-@root: Return to main
-@oligarch_influence
+- @oligarch_influence
+- @business_donations
+- @party_unity
+- @root: Return to main
 title: Oligarch influence
 subtitle: We can increase our influence in the oligarchs. -1 resource.
 choose-if: advisor_action_timer <= 0
