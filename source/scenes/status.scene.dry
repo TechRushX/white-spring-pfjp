@@ -77,17 +77,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ nfp_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the PFJP
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Liberals are interested in free market economics, courting the Oligarchs and democratic reform.">Liberal</span>!} strength: [+ liberal_strength : strength +], dissent: [+ liberal_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Progressive's goal is economic reform and benefits for organized workers, along with social justice.">Progressive</span>!} strength: [+ progressive_strength : strength +], dissent: [+ progressive_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Moderates are pragmatic participants in government, and seek to gain the votes of the rural folk, and defend democracy from extremists.">Moderates</span>!} strength: [+ moderates_strength : strength +], dissent: [+ moderates__dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
@@ -161,6 +159,14 @@ WPB: [+ wpb_votes +]%
 
 Independents: [+ ind_votes +]%
 
+
+Support for the Republic: [+ pro_republic_disp +]%
+
+Support for Bludish Rights: [+ pro_bludish_rights +]%
+
+Support for 1929 constitution: [+ pro_soll_const +]% 
+
+
 **Detailed results for each demographic**
 
 Workers: PFJP: [+ workers_pfjp_display +]%, USP: [+ workers_usp_display +]%, NFP: [+ workers_nfp_display +]%, CPS: [+ workers_cps_display +]%; WPB: [+ workers_wpb_display +]%, Independents: [+ workers_ind_display +]%
@@ -175,6 +181,3 @@ Unemployed: PFJP: [+ unemployed_pfjp_display +]%, USP: [+ unemployed_usp_display
 
 Bludish: PFJP: [+ bludish_pfjp_display +]%, USP: [+ bludish_usp_display +]%, NFP: [+ bludish_nfp_display +]%, CPS: [+ bludish_cps_display +]%; WPB: [+ bludish_wpb_display +]%, Independents: [+ bludish_ind_display +]%
 
-
-
-Support for the Republic: [+ pro_republic_disp +]%
