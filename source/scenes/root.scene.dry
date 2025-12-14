@@ -187,7 +187,7 @@ Q.reichswehr_loyalty = 0.2;
 // popular opinion
 // national ideology - on a binary scale
 // support for bludish rights
-Q.bludish_rights = 37;
+Q.pro_bludish_rights = 37;
 // socialism vs capitalism
 Q.socialism = 28;
 // how much does the public support the constitution of 1929?
