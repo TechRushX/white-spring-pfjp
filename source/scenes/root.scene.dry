@@ -63,7 +63,11 @@ Q.business_funding = 1
 Q.tusk_relation = 3
 Q.marcel_relation = 4
 
-
+Q.party_welfare = 2
+Q.new_youth = 0
+Q.new_youth_mil = 0
+Q.young_plan = 6
+Q.culturual_events = 2
 
 
 // the state of the party
