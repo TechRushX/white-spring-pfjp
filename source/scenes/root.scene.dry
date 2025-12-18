@@ -65,7 +65,7 @@ Q.marcel_relation = 4
 
 Q.party_welfare = 2
 Q.new_youth = 0
-Q.new_youth_mil = 0
+Q.nw_militancy = 0
 Q.young_plan = 6
 Q.culturual_events = 2
 
