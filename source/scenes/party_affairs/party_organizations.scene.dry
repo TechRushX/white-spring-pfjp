@@ -65,7 +65,7 @@ It is not enough for the PFJP to solely be a political party. The Sordish Singer
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; new_youth += 1; liberal_dissent -= 5
+on-arrival: resources -= 1; new_youth += 1; liberal_dissent -= 5; new_middle_pfjp += 2
 
 Our youth organizations have long been vastly unorganized and decentralized - which pales in comparison with our malenyevist and nationalist counterparts. 
 
