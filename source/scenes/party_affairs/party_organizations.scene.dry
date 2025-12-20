@@ -80,7 +80,7 @@ on-arrival: resources -= 1; new_youth += 1; liberal_dissent -= 5; new_middle_pfj
 
 Our youth organizations have long been vastly unorganized and decentralized - which pales in comparison with our malenyevist and nationalist counterparts. 
 
-[? if new_youth == 0 : The "New Youth" is an awaited project of the liberals, an effort to form a cohesive and structured program for our younger sords. The so-called Young Plan is simply not cutting it anymore. We have now taken steps to officialize its creation. ?]
+[? if new_youth == 1 : The "New Youth" is an awaited project of the liberals, an effort to form a cohesive and structured program for our younger sords. The so-called Young Plan is simply not cutting it anymore. We have now taken steps to officialize its creation. ?]
 
 [? if new_youth == 2 : The New Youth is formed! This is a moment of celebration fo our party, as we are able to sway radicalized young adults away from nationalist talking points. ?]
 
