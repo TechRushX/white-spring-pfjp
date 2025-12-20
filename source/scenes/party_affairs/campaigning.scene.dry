@@ -64,6 +64,6 @@ We have increased our campaigning among the unemployed. [? if ricter_pfjp_leader
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: bludish_spd += 6*(1-dissent); resources -= 1; bludish_pfjp -= 6 if sebastian_pfjp_leader == 1
+on-arrival: bludish_pfjp += 6*(1-dissent); resources -= 1; bludish_pfjp -= 6 if sebastian_pfjp_leader == 1
 
 We have increased our campaigning among the Bludish. [? if sebastian_pfjp_leader == 1: With Sebastian in charge, they are convinced of our betrayal to the them, and they do not take it lightly.
