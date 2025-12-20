@@ -10,11 +10,12 @@ max-visits: 6
 
 = Party Organizations
 
-In addition to being a political party, the SPD is a social world onto itself, with a vast array of associated organizations which serve the social needs of their members from cradle to grave.
+In addition to being a political party, the PFJP is a social world onto itself, with a vast array of associated organizations which serve the social needs of their members from cradle to grave.
 
 - @newspapers: Fund more newspapers and journalists.
 - @welfare: Fund more mutual aid and welfare programs.
 - @salaries: Increase the salaries of our party members.
+- @young_plan: Continue the expansion of the Young Plan.
 - @culture: Fund sports leagues, educational, and cultural programs.
 - @youth: Anti-democratic ideas are spreading early in our population. Support the youth organizations.
 - @mil_youth: Militarize the New Youth.
@@ -40,6 +41,16 @@ on-arrival: resources -= 1; party_welfare += 1; unemployed_pfjp += 3*(1 - dissen
 We have increased funding to our welfare programs, especially the community kitchen launched by Manoly in '51. The progressives are pleased, and their strength risies. [? if black_thursday_seen > 0 : In an age of economic crisis, this will be helpful for improving our standing among the workers and the unemployed. ?]
 
 
+@young_plan
+choose-if: resources > 0
+unavailable-subtitle: Not enough resources.
+subtitle: -1 resources
+on-arrival: resources -= 1; young_plan += 1; business_relations += 1; new_middle_pfjp += 1
+
+The "Young Plan" is a program launched by Ricter when he took over in 49', with its main goal being the "fight against socialism". It deals primarly with middle school children and teahces them about entrepreneurship, marketing, and what it mwans to be a proper businessman.
+
+So far, it has largely failed at its goal of containing left-wing economics, but it is fairly efficient for our electoral propaganda and display of commitment to anti-malyevenism to our business donors.
+
 
 @salaries
 choose-if: resources > 0
@@ -58,14 +69,14 @@ on-arrival: resources -= 1; cultural_events += 1; rural_pfjp += 2
 
 It is not enough for the PFJP to solely be a political party. The Sordish Singer League, People's Sports, and our schools and libraries are crucial to our electoral chances. Funding these organizations may very well give us an edge in upcoming local elections.
 
-[? if sa_strength > 500 : However, it feels frivolous to spend on sports and choirs when the fascists are murdering us in the streets. ?]
+[? if ys_strength > 500 : However, it feels frivolous to spend on sports and choirs when the totalists are murdering us in the streets. ?]
 
 
 @youth
 choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 subtitle: -1 resources
-on-arrival: resources -= 1; new_youth += 1; liberal_dissent -= 5; new_middle_pfjp += 2
+on-arrival: resources -= 1; new_youth += 1; liberal_dissent -= 5; new_middle_pfjp += 2; workers_pfjp += 2
 
 Our youth organizations have long been vastly unorganized and decentralized - which pales in comparison with our malenyevist and nationalist counterparts. 
 
@@ -81,7 +92,7 @@ choose-if: resources > 0
 unavailable-subtitle: Not enough resources.
 view-if: new_youth > 0
 subtitle: -1 resources
-on-arrival: resources -= 1; rb_strength  += 100; nw_militancy += 0.01; reichsbanner_timer = 0; funded_reichsbanner += 1
+on-arrival: resources -= 1; ny_strength  += 30; ny_militancy += 0.01; reichsbanner_timer = 0; funded_reichsbanner += 1
 
 As the Young Sords and Red Youth clash in the streets, the PFJP cannot sit idle. We are taking steps towards turning the New Youth into a genuine paramilitary force by purchasing weapons and building training grounds, to protect our democracy.
 
