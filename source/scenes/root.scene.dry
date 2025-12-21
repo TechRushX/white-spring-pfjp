@@ -70,6 +70,8 @@ Q.young_plan = 6
 Q.culturual_events = 2
 
 
+Q.streetfighting = 0
+
 // the state of the party
 // overall dissent reduces every increase in party support.
 Q.dissent = 0.05;
@@ -86,10 +88,10 @@ Q.moderates_strength = 10;
 Q.moderates_dissent = 10;
 
 // secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.threat = 0;
+Q.sebastian_resign = 0;
+Q.manoly_split = 0;
+Q.liberals_resigned = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
