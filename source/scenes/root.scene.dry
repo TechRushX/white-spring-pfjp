@@ -91,7 +91,7 @@ Q.moderates_dissent = 10;
 Q.threat = 0;
 Q.sebastian_resign = 0;
 Q.manoly_split = 0;
-Q.liberals_resigned = 0;
+Q.liberals_resign = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
