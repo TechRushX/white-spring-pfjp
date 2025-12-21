@@ -26,7 +26,7 @@ if (Q.ideology && Q.ideology != "liberal") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; liberal_strength += 5; liberal_dissent -= 5; cps_relation -= 3
+on-departure: ideology = "liberal"; liberal_strength += 5; liberal_dissent -= 5; cps_relation -= 3
 
 The liberals within the party supports a course of reformism, and potentially a democratic constitution.
 
@@ -37,7 +37,7 @@ if (Q.ideology && Q.ideology != "moderate") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "moderate"; moderate_strength += 5; center_dissent -= 10; wpb_relation -= 3; threat -= 1
+on-departure: ideology = "moderate"; moderates_strength += 5; moderates_dissent -= 10; wpb_relation -= 3; threat -= 1
 
 The Centrist Moderates, represented by Sebastian and Lavro, support a middle course in economics, whilst distancing ourselves away from bludish rights and towards the rural folk.
 
