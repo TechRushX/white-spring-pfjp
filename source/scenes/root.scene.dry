@@ -93,6 +93,8 @@ Q.sebastian_resign = 0;
 Q.manoly_split = 0;
 Q.liberals_resign = 0;
 
+Q.rsm_formed = 0
+
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
 
