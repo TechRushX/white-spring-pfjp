@@ -43,7 +43,7 @@ on-arrival: liberal_dissent -= 7; progressive_dissent += 5
 
 We have promised to adopt a more liberal posture. This may alienate the progressives, however.
 
-@concessions_center
+@concessions_moderates
 title: Give concessions to the moderates.
 view-if: moderates_dissent > 30
 on-arrival: moderates_dissent -= 7; liberal_dissent += 2; progressive_dissent += 2
