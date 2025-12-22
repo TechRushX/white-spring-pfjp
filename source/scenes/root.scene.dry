@@ -177,11 +177,11 @@ Q.gendermarie_strength = 50;
 Q.gendermarie_militancy = 1;
 Q.gendermarie_loyalty = 0.45;
 
-Q.interior_police_strength = 50;
-Q.interior_police_militancy = 1;
-Q.interior_police_loyalty = 0.45;
+Q.saf_strength = 400;
+Q.saf_militancy = 1;
+Q.saf_loyalty = 0.45;
 
-Q.lachaven_police_strength = 90;
+Q.lachaven_police_strength = 30;
 Q.lachaven_police_militancy = 1;
 Q.lachaven_police_loyalty = 0.5;
 
