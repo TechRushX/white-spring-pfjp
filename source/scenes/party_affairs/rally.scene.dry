@@ -80,7 +80,7 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @easy_discard
 
 @blud_struggle
-on-arrival: bludsih_pfjp += 3; new_middle_pfjp += 3*(1-dissent) if pro_blud_rights > 60; old_middle_spd -= 3 and old_middle_nfp += 2 if pro_blud_rights < 75; pro_blud_rights += 3; wpb_relation += 5; ind_relation += 5
+on-arrival: bludsih_pfjp += 3; new_middle_pfjp += 3*(1-dissent) if pro_blud_rights > 60; old_middle_spd -= 3 and old_middle_nfp += 2 if pro_blud_rights < 75; pro_blud_rights += 3; wpb_relation += 5; ind_relation += 5;
 
 Our message of support for the bludish struggle appeals to the bluds themselves, and improves our relations with the assembly independents and the WPB. 
 
