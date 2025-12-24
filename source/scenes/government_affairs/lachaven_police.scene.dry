@@ -1,0 +1,102 @@
+title: Lachaven Police
+new-page: true
+is-card: true
+view-if: pfjp_prussia = 1 and lachaven_affairs_timer <= 0
+on-arrival: prussian_affairs_timer += 6; month_actions += 1
+tags: govt_affairs
+card-image: img/braun.jpg
+
+= Prussian Affairs
+
+
+We can enact policies in the Lachaven Police.
+
+- @police_loyalty: Increase our influence in the police.
+- @police_strength: Recruit additional police.
+- @lenient: Be more lenient in arrests of protestors.
+- @ban_ys: Ban the Young Sords, the Nationalist group.
+- @enforce_ys: Enforce the ban on the Young Sords.
+- @unban_ys: Reverse the Young Sords ban.
+- @ban_ry: Ban the Red Youth, the Communist group.
+- @enforce_ry: Enforce the ban on the Red Youth.
+- @unban_ry: Reverse the Red Youth ban.
+- @target_bluds: Target the Bludish.
+- @root: No new policies are needed.
+- @easy_discard
+- @cancel_advisor_action
+
+@police_loyalty
+view-if: lachaven_police_loyalty < 1
+on-arrival: lachaven_police_loyalty += 0.1
+
+The police have historically been heavily influenced by us, as we are heavily entrenched in the city. We can still take more steps towards securing their loyalty and root out nationalist bias, however, mostly through improved training and recruitment processes to select for a broader demographic than the traditional conservatives, and to put a tighter leash on their political activity. In addition, we set up committees to investigate the ranks of the police and remove those with far-right sympathies. It is a slow and arduous work, but it has proven effective.
+
+Current police loyalty: [+ lachaven_police_loyalty : loyalty +].
+
+
+@police_strength
+on-arrival: lachaven_police_strength += 10
+
+We have increased the size of the Lachaven police.
+
+
+@lenient
+on-arrival: unrest += 1; threat += 1 old_middle_pfjp -= 1; cps_relation += 2; wpb_relation += 2; workers_cps += 2; new_middle_usp -= 2
+
+We have started to not enforce the strict anti-protesting laws of Soll as much, allowing people to riot more freely.
+
+This has hurt the perception of Adrian and our party amongst more nationalist voters, along with that of the leading party of the USP, whilst benefitting the CPS in rallying voters towards their side, for which they thank us silently.
+
+
+@ban_ys
+view-if: ys_banned == 0
+on-arrival: threat += 1; ys_strength *= 0.9; ys_strength *= 0.8 if lachaven_police loyalty >= 0.75; ys_banned = 1; cps_relation += 3; wpb_relation += 3; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05; ys_ban_timer = 6; old_middle_nfp -= 2
+
+As it turns out, the nationalist Young Sords have many allies in the police and bureaucracy, despite our large influence. Our relationship with the police weakens, and the Young Sords can still organize illegally, right under the police's noses. [? if lachaven_police_loyalty >= 0.7 : Nevertheless, the organization is substantially weakened by our ban. ?]
+
+Some of our opponents claim that we are infringing on individual freedoms, but perhaps the security of the republic requires it.
+
+
+@enforce_ys
+view-if: ys_banned == 1
+on-arrival: threat += 1; ys_strength *= 0.95; ys_strength *= 0.9 if lachaven_police loyalty >= 0.75; ys_banned = 1; cps_relation += 2; wpb_relation += 2; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05;
+
+We enforce the Young Sords ban, further targetting and arresting their members and tracking down underground meetings. Our relationship with the police weakens, and the Young Sords can still organize illegally. Yet, we are taking true steps towards ending political violence.
+
+
+@unban_ys
+view-if: ys_banned = 1
+on-arrival: ys_banned = 0; ys_strength += 60; ys_militancy += 0.05; threat -= 2; cps_relation -= 3; wpb_relation -= 3;
+
+The Youngs Sords are no longer banned. They immediately go on a recruiting spree.
+
+
+@ban_ry
+view-if: ry_banned == 0
+on-arrival: threat -= 2; ry_strength *= 0.85; ry_banned = 1; cps_relation -= 3; cps_hostility += 1; wpb_relation -= 3; lachaven_police_loyalty += 0.05; ry_militancy -= 0.05; ry_ban_timer = 6; workers_pfjp -= 2; new_middle_pfjp += 2; old_middle_pfjp += 2; business_relations += 1; walter_relation += 1; marcel_relation += 1; edmonds_influence += 1;
+
+The ban is enthusiastically carried out by the police, perhaps too enthusiastically. The Communists take this as one more reason why the Liberals are traitors to the republic. However, the USP reformists and even the key supreme court judge Edmonds appproves, as do the police, along with the businesses and oligarchs.
+
+Some of our opponents claim that we are infringing on individual freedoms, but perhaps the security of the republic requires it.
+
+
+@enforce_ry
+view-if: ry_banned == 1
+on-arrival: threat -= 1; ry_strength *= 0.9; cps_relation -= 2; wpb_relation -= 2; lachaven_police_loyalty += 0.05; ry_militancy -= 0.05; workers_pfjp -= 1; new_middle_pfjp += 1; old_middle_pfjp += 1; business_relations += 1;
+
+We enforce the Red Youth ban, further targetting and arresting their members and tracking down underground meetings. Our relationship with the police strengthens, whilst the communists and bludish accuse us of heavy bias in our decision-making. Yet, we are taking true steps towards ending political violence.
+
+
+@unban_ry
+view-if: ry_banned = 1
+on-arrival: ry_banned = 0; ry_strength += 60; ry_militancy += 0.05; threat += 2; cps_relation += 3; wpb_relation += 3;
+
+The Red Youth are no longer banned. They immediately go on a recruiting spree.
+
+
+@target_bluds
+on-arrival: threat -= 1; pro_blud_rights -= 2; wpb_hostility += 1; wpb_relation -= 4; lachaven_shift += 1; progressive_dissent += 5; liberal_dissent += 5; moderates_strength += 5; moderates_dissent -= 5
+
+We can target bluds in our policing actions, finding the most obscure things to fine or arrest them other, painting a negative image in the eyes of Sordland. As such, Lachaveners are beginning to doubt their belief in supporting equal rights for minorities. 
+
+The WPB accuses us of impartiality, as do the progressives and liberals inside our own party. Only Sebastian and the moderates approve, drawing more influence towards them.
