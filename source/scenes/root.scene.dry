@@ -62,6 +62,8 @@ Q.business_funding = 1
 
 Q.tusk_relation = 3
 Q.marcel_relation = 4
+Q.edmonds_influence = 0
+Q.clavin_influence = 0
 
 Q.party_welfare = 2
 Q.new_youth = 0
@@ -72,8 +74,6 @@ Q.culturual_events = 2
 Q.rayne_pop = 0
 Q.const_win = 0
 Q.unrest = 0
-
-Q.edmonds_influence = 0
 
 Q.streetfighting = 0
 
