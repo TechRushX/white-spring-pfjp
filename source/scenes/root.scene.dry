@@ -69,6 +69,9 @@ Q.nw_militancy = 0
 Q.young_plan = 6
 Q.culturual_events = 2
 
+Q.rayne_pop = 0
+Q.const_win = 0
+Q.unrest = 0
 
 Q.streetfighting = 0
 
