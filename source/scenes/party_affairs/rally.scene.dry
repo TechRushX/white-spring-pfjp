@@ -80,11 +80,11 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @easy_discard
 
 @blud_struggle
-on-arrival: bludish_pfjp += 3; new_middle_pfjp += 3*(1-dissent) if pro_blud_rights > 60; old_middle_pfjp -= 3 if pro_blud_rights < 75; old_middle_nfp += 2 if pro_blud_rights < 75; pro_blud_rights += 3; wpb_relation += 5; ind_relation += 5;
+on-arrival: bludish_pfjp += 1; new_middle_pfjp += 3*(1-dissent) if pro_blud_rights > 60; old_middle_pfjp -= 3 if pro_blud_rights < 75; old_middle_nfp += 2 if pro_blud_rights < 75; pro_blud_rights += 3; wpb_relation += 5; ind_relation += 5;
 
 Our message of support for the bludish struggle appeals to the bluds themselves, and improves our relations with the assembly independents and the WPB. 
 
-[? if pro_blud_rights > 60 : The new middle class is now largely supportive of our message of equality for national minorities, and we increase our support base further ?] [? if pro_blud_rights < 75 : The old middle class is still against our efforts, and we lose a chunk of our voters to the nationalists. ?].
+[? if pro_blud_rights > 60 : The new middle class is now largely supportive of our message of equality for national minorities, and we increase our support base further ?] [? if pro_blud_rights < 75 : The old middle class is still against justice for minorities, and we lose a chunk of our voters to the nationalists. ?].
 
 @welfare
 on-arrival: workers_pfjp += 2*(1-dissent); workers_pfjp += 3*(1-dissent) if welfare > 0; unemployed_pfjp += 2*(1-dissent); progressive_strength += 3; progressive_dissent -= 3;
