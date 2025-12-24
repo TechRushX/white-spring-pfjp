@@ -73,6 +73,8 @@ Q.rayne_pop = 0
 Q.const_win = 0
 Q.unrest = 0
 
+Q.edmonds_influence = 0
+
 Q.streetfighting = 0
 
 // the state of the party
