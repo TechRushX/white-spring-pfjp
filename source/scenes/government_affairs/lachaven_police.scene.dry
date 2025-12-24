@@ -59,7 +59,7 @@ Some of our opponents claim that we are infringing on individual freedoms, but p
 
 @enforce_ys
 view-if: ys_banned == 1
-on-arrival: threat += 1; ys_strength *= 0.95; ys_strength *= 0.9 if lachaven_police loyalty >= 0.75; ys_banned = 1; cps_relation += 2; wpb_relation += 2; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05;
+on-arrival: threat += 1; ys_strength *= 0.95; ys_strength *= 0.9 if lachaven_police_loyalty >= 0.75; ys_banned = 1; cps_relation += 2; wpb_relation += 2; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05; old_middle_nfp -= 1;
 
 We enforce the Young Sords ban, further targetting and arresting their members and tracking down underground meetings. Our relationship with the police weakens, and the Young Sords can still organize illegally. Yet, we are taking true steps towards ending political violence.
 
