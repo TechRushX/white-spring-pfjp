@@ -50,7 +50,7 @@ This has hurt the perception of Adrian and our party amongst more nationalist vo
 
 @ban_ys
 view-if: ys_banned == 0
-on-arrival: threat += 1; ys_strength *= 0.9; ys_strength *= 0.8 if lachaven_police loyalty >= 0.75; ys_banned = 1; cps_relation += 3; wpb_relation += 3; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05; ys_ban_timer = 6; old_middle_nfp -= 2
+on-arrival: threat += 1; ys_strength *= 0.9; ys_strength *= 0.8 if lachaven_police_loyalty >= 0.75; ys_banned = 1; cps_relation += 3; wpb_relation += 3; lachaven_police_loyalty -= 0.05; ys_militancy -= 0.05; ys_ban_timer = 6; old_middle_nfp -= 2
 
 As it turns out, the nationalist Young Sords have many allies in the police and bureaucracy, despite our large influence. Our relationship with the police weakens, and the Young Sords can still organize illegally, right under the police's noses. [? if lachaven_police_loyalty >= 0.7 : Nevertheless, the organization is substantially weakened by our ban. ?]
 
