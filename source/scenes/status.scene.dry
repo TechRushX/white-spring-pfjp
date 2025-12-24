@@ -121,6 +121,10 @@ Sordish Armed Forces: [+ saf_strength +] thousand troops.
 
 Sordish Armed Forces Loyalty: [+ saf_loyalty : loyalty +]
 
+Gendermarie: [+ gendermarie_strength +] thousand members.
+
+Gendermarie: [+ gendermarie_loyalty : loyalty +]
+
 Lachaven police: [+ lachaven_police_strength +] thousand members.
 
 Lachaven police loyalty: [+ lachaven_police_loyalty : loyalty +]
