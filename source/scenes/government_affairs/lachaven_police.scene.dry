@@ -41,7 +41,7 @@ We have increased the size of the Lachaven police.
 
 
 @lenient
-on-arrival: unrest += 1; threat += 1 old_middle_pfjp -= 1; cps_relation += 2; wpb_relation += 2; workers_cps += 2; new_middle_usp -= 2
+on-arrival: unrest += 1; threat += 1; old_middle_pfjp -= 1; cps_relation += 2; wpb_relation += 2; workers_cps += 2; new_middle_usp -= 2;
 
 We have started to not enforce the strict anti-protesting laws of Soll as much, allowing people to riot more freely.
 
