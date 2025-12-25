@@ -1,0 +1,46 @@
+title: Increase Influence
+new-page: true
+is-card: true
+view-if: year == 1954
+on-arrival: month_actions += 1; influence_timer += 6
+card-image: img/portraits/RadbruchGustav.jpg
+tags: party_affairs
+
+= Increase our Influence
+
+As a major political force in the country, we have the power to influence certain factions. We should take this towards our advantage.
+
+Where do we increase our influence?
+
+- @usp_reform: In the USP reformist faction.
+- @centre_judges: In the centrist wing of the Supreme Court.
+- @oligarchs: In the Oligarchs and the Lotherberg Group.
+- @easy_discard
+- @cancel_advisor_action
+
+@usp_reform
+subtitle: -1 resource.
+unavailable-subtitle: Not enough resources.
+choose-if: resources >= 1
+on-arrival: resources -= 1; clavin_influence += 1
+
+We increase our influence over Clavin and his fellow party members, which might prove advantageous in controlling the USP from within and with constitutional reforms.
+
+
+@centre_judges
+subtitle: -1 resource.
+unavailable-subtitle: Not enough resources.
+choose-if: resources >= 1
+on-arrival: resources -= 1; edmonds_influence += 1
+
+Increasing our influence over Edmonds and her allies in the judiciary might come in handy for the constitution, and for shaping other judicial cases towards a prefferable outcome.
+
+
+@oligarchs
+subtitle: -1 resource.
+unavailable-subtitle: Not enough resources.
+choose-if: resources >= 1
+on-arrival: resources -= 1; progressive_dissent += 10; marcel_relation += 1; tusk_relation += 1
+
+We have increased our influence in the oligarchs, which helps sway them away from other bourgeoisie parties, like the USP or NFP. The progressives condemn this, arguing we should not fight fire with fire, but instead limit corporate influence as a whole. 
+
