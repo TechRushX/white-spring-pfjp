@@ -91,7 +91,7 @@ Q.streetfighting = 0
 Q.lachaven_shift = 0
 Q.lachaven_infra = 0
 Q.diversity_programs = 0
-
+Q.lachaven_embezzle = 0
 Q.lachaven_pfjp_own = 1
 
 Q.lach_pfjp = 45
