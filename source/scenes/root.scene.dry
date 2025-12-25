@@ -78,7 +78,7 @@ Q.unrest = 0
 Q.streetfighting = 0
 
 Q.lachaven_shift = 0
-
+Q.lachaven_infra = 0
 Q.ec_dev = 3 
 
 // the state of the party
