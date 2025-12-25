@@ -46,6 +46,15 @@ Q.ricter_pfjp_leader = 1
 Q.manoly_pfjp_leader = 0
 Q.sebastian_pfjp_leader = 0
 
+
+Q.pfjp_leader = "Ricter"
+
+Q.usp_leader = "Alphonso"
+Q.nfp_leader = "Kibener"
+Q.wpb_leader = "Ejall"
+Q.cps_leader = "Stahler"
+
+
 Q.sebastian_resigned = 0
 
 Q.tv = 0
@@ -72,13 +81,38 @@ Q.young_plan = 6
 Q.culturual_events = 2
 
 Q.rayne_pop = 0
-Q.const_win = 0
+Q.const_support = 0
+Q.const_passed = 0
+Q.const_vote = 0
 Q.unrest = 0
 
 Q.streetfighting = 0
 
 Q.lachaven_shift = 0
 Q.lachaven_infra = 0
+Q.diversity_programs = 0
+
+Q.lachaven_pfjp_own = 1
+
+Q.lach_pfjp = 45
+Q.lach_usp = 30
+Q.lach_nfp = 5
+Q.lach_wpb = 5
+Q.lach_cps = 15
+
+Q.jen_pfjp = 20
+Q.jen_usp = 20
+Q.jen_nfp = 55
+Q.jen_wpb = 1
+Q.jen_cps = 4
+
+Q.hols_pfjp = 20
+Q.hols_usp = 50
+Q.hols_nfp = 10
+Q.hols_wpb = 3
+Q.hols_cps = 17
+
+
 Q.ec_dev = 3 
 
 // the state of the party
