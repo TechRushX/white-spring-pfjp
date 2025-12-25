@@ -19,7 +19,7 @@ title: Oligarch influence
 subtitle: We can increase our influence in the oligarchs. -1 resource.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if resources < 0: Not enough resources. ?]
-on-arrival: advisor_action_timer = 6; resources -= 1; labor_dissent += 10; left_dissent += 10;
+on-arrival: advisor_action_timer = 6; resources -= 1; progressive_dissent += 10; marcel_relation += 1; tusk_relation += 1
 
 We have increased our influence in the oligarchs, which helps sway them away from other parties, like the USP or NFP. The progressives condemn this, arguing we should not fight fire with fire, but instead limit corporate influence as a whole. 
 
