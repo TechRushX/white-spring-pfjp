@@ -1,0 +1,89 @@
+title: Lachaven Mayoral Affairs
+new-page: true
+is-card: true
+tags: govt_affairs, cabinet
+on-arrival: police_timer += 6; month_actions += 1
+view-if: lachave_affairs_timer <= 0; lachaven_pfjp_own == 1
+card-image: img/portraits/SeveringCarl.jpg
+
+= Internal Security
+
+Lachaven, by far one of the most developed and important cities in Sordland, is governed by our party, with support from the Bludish party. It is the most stable and democratic city in Sordland, led by the able Adrian Derrow.
+
+Our policies here affect not only the city proper, but also Sordland as a whole, as it is the commercial and economic heart of the nation - where news, achievements, and gossip spread like wildfire
+
+- @lachaven_infra1
+- @lachaven_infra2
+- @racial_awareness
+- @education_reform
+- @promote_prejudice
+- @embezzle1
+- @embezzle2
+- @root: Take no action for now.
+- @easy_discard
+- @cancel_advisor_action
+
+@lachaven_infra1
+title: Improve the local infrastructure.
+view-if: lachaven_infra != 4
+on-arrival: lachaven_infra += 1; new_middle_pfjp += 2; old_middle_pfjp += 1; workers_pfjp += 2; unemployed_pfjp += 1; lach_pfjp += 1
+
+We can improve the infrastructure of Lachaven by expanding the electrification of the city, along with repairing and modernizing roads that weren't touched for decades, and upgrading our port to handle all the influx of goods.
+
+This raises living standards slightly, and serves as great electoral propaganda.
+
+@lachaven_infra2
+title: Improve the local infrastructure
+view-if: lachaven_infra == 4
+on-arrival: lachaven_infra += 1; new_middle_pfjp += 3; old_middle_pfjp += 2; workers_pfjp += 3; unemployed_pfjp += 2; ec_dev += 1; lach_pfjp += 1; rayne_pop -= 2 if usp_leader == "Rayne"; new_middle_usp -= 2;
+
+We have greatly improved Lachaven's infrastructure, particularly our port, which has regained some of its lost international importance - to the point where there is a felt effect on the national economy.
+
+Our party's legitimacy as one of good, capable governors has risen, kicking [+ usp_leader +] and the USP right where it hurts.
+
+
+@racial_awareness
+title: Launch new programs towards promoting diversity and erasing racial prejudices. 
+on-arrival: threat += 1; moderates_dissent += 2; moderates_strength -= 2; pro_blud_rights += 3; lachaven_shift -= 1; diversity_programs += 1; new_middle_pfjp += 2; bludish_pfjp += 1; wpb_hostility -= 1 if diversity_programs == 2; wpb_relations += 2; ind_hostility -= 1 if diversity_programs == 2; ind_relation += 2; wpb_hostility -= 1 if diversity_programs == 4; ind_hostility -= 1 if diversity_programs == 4
+
+Promoting diversity, equity and inclusion is well within our reaches as the mayors, and something which has been historically proven as effective - at promoting support for equal rights, gathering support, and fostering good-will between us and the bludish parties. 
+
+Essentially nobody objects, except for Sebastian, who raises concerns over focusing on minorities over more practical policies.
+
+
+@education_reform
+title: Reform the education system. 
+on-arrival: pro_blud_rights += 2; wpb_relation += 2; cps_relation += 2; ind_relation += 2; lach_pfjp += 1; new_middle_usp -= 2; workers_cps += 1; new_middle_pfjp += 2; lachaven_shift -= 1; lachaven_infra += 0.5;
+
+Our influence in the bureaucracy is deeply entrenched, including in the schools inside this city. As such, even though it isn't within mayoral duties, we can still have an impact in the education of our fellow Lachaveners.
+
+We are pushing he system towards inclusivity and critical thinking, having a slight impact on the local economy. Also, the USP loses support as we erode the impact of the nationalist-sollist curriculum on their votes, whilst simultaneously boosting our own support - and even that of the communists.
+
+
+@promote_prejudice
+title: Release statistics and analyses that push a negative rethoric against the bluds. 
+on-arrival: threat -= 1; pro_blud_rights -= 2; lachaven_shift += 1; lachaven_infra -= 0.5; moderates_strength += 3; moderates_dissent -= 3; progressive_dissent += 4; liberal_dissent += 4; new_middle_pfjp -= 2; old_middle_pfjp += 3; old_middle_nfp -= 2; old_middle_usp -= 1; wpb_hostility += 1; ind_hositlity += 1; wpb_relation -= 3; ind_relation -= 3;
+
+Focusing on promoting hate towards minorities is largely unpopular within the party, outside of the Moderates, who rejoice at our efforts to draw away nationalist voters from the far-right and to shift Lachaven away from its image of acceptance and welcomeness.
+
+We attack the bluds on a combination of high crime and homelessnes rates, whilst ignoring the main causes, painting them as lesser. Support for bludish rights weakens, as do our relations with the bludish politicians, which might come to hurt us in the future. The tourism industry also takes a hit.
+
+
+@embezzle1
+title: Embezzle funds from the city budget.
+view-if: lachaven_embezzle < 3
+on-arrival: resources += 1; lachaven_embezzle += 1; lach_pfjp -= 1; new_middle_usp -= 1;
+
+Secretly, we transfer money from the city using our entrenched influence in the administration. 
+
+This is new and doesn't raise much suspicion, however, some journalists are starting to pick up on it, giving valuable but not yet credible enough points for our enemies to use in their attacks on us.
+
+
+@embezzle2
+title: Embezzle funds from the city budget.
+view-if: lachaven_embezzle >= 3
+on-arrival: resources += 1; lachaven_embezzle += 1; lach_pfjp -= 3; new_middle_usp -= 2; workers_pfjp -= 1; old_middle_pfjp -= 1; unemployed_pfjp -= 2
+
+Secretly, we transfer money from the city using our entrenched influence in the administration. 
+
+The press is starting to properly pick up on it, and as such, we are painted as yet another corrupt party that uses their positions just for their own financial gain.
