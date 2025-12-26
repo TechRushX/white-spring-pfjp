@@ -112,6 +112,7 @@ Q.hols_nfp = 10
 Q.hols_wpb = 3
 Q.hols_cps = 17
 
+Q.rural_malenyevism = 0
 
 Q.ec_dev = 3 
 
