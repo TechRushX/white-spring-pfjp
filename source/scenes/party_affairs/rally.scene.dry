@@ -70,34 +70,55 @@ The SA have won this show of strength.
 
 @main_rally
 
-Mass rallies are a common feature of social liberal life, especially in the lead-up to an election. What is the primary theme of this rally?
+Mass rallies are a common feature of <span style="color: #3F7BC1;">social liberal</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
 
 - @blud_struggle: The struggle of the bludish people against the discriminatory establishment.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against dictatorship and totalism.
+- @democracy: Expanding our nascent democracy and defending it against <span style="color: #800080;">dictatorship</span> and <span style="color: #000000;">totalism</span>.
+- @target_soll: Target Soll's cult of personality.
+- @free_market: Argue for the continuation of Alphonso's free market reforms.
 - @nrp: Support the NRP economic plan!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
+
 @blud_struggle
 on-arrival: bludish_pfjp += 1; new_middle_pfjp += 3*(1-dissent) if pro_blud_rights > 60; old_middle_pfjp -= 3 if pro_blud_rights < 75; old_middle_nfp += 2 if pro_blud_rights < 75; pro_blud_rights += 3; wpb_relation += 5; ind_relation += 5;
 
-Our message of support for the bludish struggle appeals to the bluds themselves, and improves our relations with the assembly independents and the WPB. 
+Our message of support for the <span style="color: #DCCA4A;">bludish</span> struggle appeals to the bluds themselves, and improves our relations with the assembly <span style="color: #A0A0A0;">independents</span> and the <span style="color: #DCCA4A;">WPB</span>. 
 
-[? if pro_blud_rights > 60 : The new middle class is now largely supportive of our message of equality for national minorities, and we increase our support base further ?] [? if pro_blud_rights < 75 : The old middle class is still against justice for minorities, and we lose a chunk of our voters to the nationalists. ?].
+[? if pro_blud_rights > 60 : The new middle class is now largely supportive of our message of equality for national minorities, and we increase our support base further ?] [? if pro_blud_rights < 75 : The old middle class is still against justice for minorities, and we lose a chunk of our voters to the <span style="color: #000000;">nationalists</span>. ?].
+
 
 @welfare
-on-arrival: workers_pfjp += 2*(1-dissent); workers_pfjp += 3*(1-dissent) if welfare > 0; unemployed_pfjp += 2*(1-dissent); progressive_strength += 3; progressive_dissent -= 3;
+on-arrival: progressive_strength += 5; progressive_dissent -= 5; workers_pfjp += 2*(1-dissent); workers_pfjp += 3*(1-dissent) if welfare > 0; unemployed_pfjp += 2*(1-dissent); progressive_strength += 3; progressive_dissent -= 3;
 
-The leftist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 0 : Our achievements in expanding welfare have made this message more effective. ?]
+The leftist message appeals to the organized workers, whose benefits are the accomplishments of <span style="color: #C40000;">social democratic</span> policies. [? if welfare > 0 : Our achievements in expanding welfare have made this message more effective. ?]
+
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); new_middle_pfjp += 4*(1-dissent) if democratization >= 3; workers_pfjp += 4*(1-dissent) if democratization >= 3; unemployed_pfjp += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3
 
-Our speakers defend the republican system and rail against the monarchists and authoritarians who threaten it.
+Our speakers defend the <span style="color: #800080;">rep</span><span style="color: #FFFFFF;">ubli</span><span style="color: #DCCA4A;">can</span> system and rail against the <span style="color: #808080;">reactionaries</span> and <span style="color: #800080;">authoritarians</span> who threaten it.
 
 [? if democratization < 3 : Talk of democracy does not excite the voters as much as more practical issues. But that may change; part of our job is to provide political education to the electorate. ?]
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the voters are enthusiastic about our message. ?]
+
+
+@target_soll
+on-arrival: pro_soll_const -= 2; new_middle_usp -= 2; old_middle_usp -= 1; workers_usp -= 1; new_middle_pfjp += 2; old_middle_pfjp += 1; workers_pfjp += 1; cps_relation += 2; wpb_relation += 2; ind_relation += 2
+
+Soll has been gone from office for years, yet his influence still remains at large. Schools portray him as a saviour, our youth is indocrinated to the core, way too many politicans would rather bow to him than Sordland, and the Old Guard, despite Alphonso's efforts, is not yet fully gone and still runs our country from the shadows.
+
+The cult of personality around him has been our main talking point for years, and quite the effective one at that.
+
+
+@free_market
+on-arrival: socialism -= 3; rural_malenyevism -= 0.5; liberal_strength += 5; liberal_dissent -= 5; progressive_dissent += 4; new_middle_pfjp += 3*(1-dissent); old_middle_pfjp += 2*(1-dissent); workers_pfjp += 1*(1-dissent); unemployed_pfjp -= 2; cps_relation -= 2;
+
+Despite its flaws, the free market reigns supreme as the best economic system. Our speakers argue about its advantages, such as innovation, less corruption, and alignment with Arcasia.
+
+However, the unemployed view our push for capitalism as tone deaf, given the economic crises generated, in their eyes, by [+ president +]'s reckless pursue of privatization and appeasement of the Oligarchs. This also slightly hurts our relations with the Communists.
 
 
 @nrp
