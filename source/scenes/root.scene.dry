@@ -384,9 +384,8 @@ Q.economic_records = [];
 
 // State of the government
 Q.president = "Alphonso";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+// starting vice president: Gus Manger
+Q.vice_president = "Manger";
 Q.pfjp_in_government = 0;
 Q.usp_in_government = 1;
 Q.nfp_in_government = 0;
