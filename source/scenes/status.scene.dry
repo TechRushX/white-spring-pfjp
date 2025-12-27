@@ -20,31 +20,36 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-PFJP position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+<span style="color: #3F7BC1;">**PFJP**</span> position: [? if pfjp_toleration : toleration ?][? if pfjp_in_government : in government - ?][? if pfjp_toleration == 0 and pfjp_in_government == 0 and pfjp_caretaker == 0 : opposition ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
+Lachaven Government: <span style="color: #3F7BC1;">**PFJP**</span> Mayor
+
+
+
 Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+President: <span style="color: #800080;">Alphonso</span> <span style="color: #800080;">(USP)</span>
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Vice President: <span style="color: #800080;">Manger</span> <span style="color: #800080;">(USP)</span>
 
-Reichstag composition:
+GNA composition:
 
-# 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="The People’s Freedom and Justice Party">PFJP</span>!}: [+ pfjp_r +]%
-{!<span class="tooltip-text" title="United Sordland Party">USP</span>!}: [+ usp_r +]%
-{!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ nfp_r +]%
-{!<span class="tooltip-text" title="Communist Party of Sordland">CPS</span>!}: [+ cps_r +]%
-{!<span class="tooltip-text" title="Workers’ Party of Bludia">WPB</span>!}: [+ wpb_r +]%
-{!<span class="tooltip-text" title="Independents">Independents</span>!}: [+ ind_r +]%
-Others: [+ other_r +]%
+<span class="tooltip-text" title="People's Freedom and Justice Party" style="color: #3F7BC1 **PFJP**</span>: : [+ pfjp_r +]%
+<span class="tooltip-text" title="United Sordland Party" style="color: #800080;">**USP**</span>: [+ usp_r +]
+<span class="tooltip-text" title="National Front Party" style="color: #7A3C00;">**NFP**</span>: [+ nfp_r +]
+[? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Socialist Workers' Party of Germany" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
+<span class="tooltip-text" title="Communist Party of Sordland" style="color: #700000;">**CPS**</span>: [+ kpd_r +]%
+<span class="tooltip-text" title="Workers' Party of Bludia" style="color: #C0A054;">**WPB**</span>: [+ wpb_r +]
+<span class="tooltip-text" title="Independents" style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]
+
+
 
 [? if pfjp_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -152,7 +157,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 <span style="color: #D3C24D;">**WPB**</span>: [+ wpb_votes +]%
 
-**Independents**: [+ ind_votes +]%
+<span style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]
 
 
 Support for the Republic: [+ pro_republic_disp +]%
