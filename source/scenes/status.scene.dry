@@ -72,15 +72,15 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Communist Party of Sordland">CPS</span>!}: [+ cps_relation : relationships +]
+<span class="tooltip-text" title="Communist Part of Sordland"color: #700000;">**CPS**</span>: [+ cps_relation : relationships +]
 
-{!<span class="tooltip-text" title="Workers' Party of Bludia">WPB</span>!}: [+ wpb_relation : relationships +]
+<span class="tooltip-text" title="Worker's Party of Bludia"color: #D3C24D;">**WPB**</span>: [+ wpb_relation : relationships +]
 
-{!<span class="tooltip-text" title="Independents">Independents</span>!}: [+ ind_relation : relationships +]
+<span color: #A0A0A0;">**Independents**</span>: [+ ind_relation : relationships +]
 
-{!<span class="tooltip-text" title="United Sordland Party">USP</span>!}: [+ usp_relation : relationships +]
+<span class="tooltip-text" title="United Sordland Party"color: #800080;">**USP**</span>: [+ usp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ nfp_relation : relationships +]
+<span class="tooltip-text" title="National Front Party"color: #7A3C00;">**NFP**</span>: [+ nfp_relation : relationships +]
 
 = Internal Factions of the PFJP
 
@@ -160,11 +160,13 @@ Q.socialism_disp = Math.round(Q.socialism);
 <span style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]%
 
 
+
 Support for the Republic: [+ pro_republic_disp +]%
 
 Bludish Rights support: [+ pro_blud_rights +]%
 
 1929 constitution support: [+ pro_soll_const +]% 
+
 
 
 **Detailed results for each demographic**
