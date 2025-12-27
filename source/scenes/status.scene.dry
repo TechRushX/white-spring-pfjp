@@ -42,12 +42,12 @@ Vice President: <span style="color: #800080;">Manger</span> <span style="color: 
 GNA composition:
 
 <span class="tooltip-text" title="People's Freedom and Justice Party" style="color: #3F7BC1 **PFJP**</span>: : [+ pfjp_r +]%
-<span class="tooltip-text" title="United Sordland Party" style="color: #800080;">**USP**</span>: [+ usp_r +]
-<span class="tooltip-text" title="National Front Party" style="color: #7A3C00;">**NFP**</span>: [+ nfp_r +]
+<span class="tooltip-text" title="United Sordland Party" style="color: #800080;">**USP**</span>: [+ usp_r +]%
+<span class="tooltip-text" title="National Front Party" style="color: #7A3C00;">**NFP**</span>: [+ nfp_r +]%
 [? if sapd_formed and sapd_r > 0: <span class="tooltip-text" title="Socialist Workers' Party of Germany" style="color: #9B0000;">**SAPD**</span>: [+ sapd_r +]% ?]
 <span class="tooltip-text" title="Communist Party of Sordland" style="color: #700000;">**CPS**</span>: [+ kpd_r +]%
-<span class="tooltip-text" title="Workers' Party of Bludia" style="color: #C0A054;">**WPB**</span>: [+ wpb_r +]
-<span class="tooltip-text" title="Independents" style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]
+<span class="tooltip-text" title="Workers' Party of Bludia" style="color: #C0A054;">**WPB**</span>: [+ wpb_r +]%
+<span class="tooltip-text" title="Independents" style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]%
 
 
 
@@ -157,7 +157,7 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 <span style="color: #D3C24D;">**WPB**</span>: [+ wpb_votes +]%
 
-<span style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]
+<span style="color: #A0A0A0;">**Independents**</span>: [+ ind_r +]%
 
 
 Support for the Republic: [+ pro_republic_disp +]%
