@@ -27,8 +27,11 @@ Resources available: [+ resources +]
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Lachaven Government: <span style="color: #3F7BC1;">**PFJP**</span> Mayor
+Holsord Mayor: <span style="color: #3F7BC1;">**PFJP**</span>
 
+Lachaven Mayor: <span style="color: #800080;">**USP**</span>
+
+Jen Mayor: <span style="color: #7A3C00;">**NFP**</span>
 
 
 Internal dissent: [+ dissent_percent : dissent +]
@@ -71,16 +74,15 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
+<span class="tooltip-text" title="Communist Part of Sordland" style="color: #700000;">**CPS**</span>: [+ cps_relation : relationships +]
 
-<span class="tooltip-text" title="Communist Part of Sordland"color: #700000;">**CPS**</span>: [+ cps_relation : relationships +]
+<span class="tooltip-text" title="Worker's Party of Bludia" style="color: #D3C24D;">**WPB**</span>: [+ wpb_relation : relationships +]
 
-<span class="tooltip-text" title="Worker's Party of Bludia"color: #D3C24D;">**WPB**</span>: [+ wpb_relation : relationships +]
+<span style="color: #A0A0A0;">**Independents**</span>: [+ ind_relation : relationships +]
 
-<span color: #A0A0A0;">**Independents**</span>: [+ ind_relation : relationships +]
+<span class="tooltip-text" title="United Sordland Party" style="color: #800080;">**USP**</span>: [+ usp_relation : relationships +]
 
-<span class="tooltip-text" title="United Sordland Party"color: #800080;">**USP**</span>: [+ usp_relation : relationships +]
-
-<span class="tooltip-text" title="National Front Party"color: #7A3C00;">**NFP**</span>: [+ nfp_relation : relationships +]
+<span class="tooltip-text" title="National Front Party" style="color: #7A3C00;">**NFP**</span>: [+ nfp_relation : relationships +]
 
 = Internal Factions of the PFJP
 
