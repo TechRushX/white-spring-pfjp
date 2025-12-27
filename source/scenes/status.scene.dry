@@ -91,13 +91,13 @@ Economic growth: [+ economic_growth_2 +]%
 @paramilitaries
 on-arrival: {!
 if (Q.ny_strength) {
-    Q.ny_strength_2 = Q.rb_strength.toFixed(1);
+    Q.ny_strength_2 = Q.ny_strength.toFixed(1);
 }
 if (Q.ry_strength) {
-    Q.ry_strength_2 = Q.rfb_strength.toFixed(1);
+    Q.ry_strength_2 = Q.ry_strength.toFixed(1);
 }
 if (Q.ys_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
+    Q.ys_strength_2 = Q.ys_strength.toFixed(1);
 }
 !}
 
@@ -140,19 +140,19 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-PFJP: [+ pfjp_votes +]%
+<span style="color: #3F7BC1;">**PFJP**</span>: [+ pfjp_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-USP: [+ usp_votes +]%
+<span style="color: #800080;">**USP**</span>: [+ usp_votes +]%
 
-NFP: [+ nfp_votes +]%
+<span style="color: #7A3C00;">**NFP**</span>: [+ nfp_votes +]%
 
-CPS: [+ cps_votes +]%
+<span style="color: #700000;">**CPS**</span>: [+ cps_votes +]%
 
-WPB: [+ wpb_votes +]%
+<span style="color: #D3C24D;">**WPB**</span>: [+ wpb_votes +]%
 
-Independents: [+ ind_votes +]%
+**Independents**: [+ ind_votes +]%
 
 
 Support for the Republic: [+ pro_republic_disp +]%
