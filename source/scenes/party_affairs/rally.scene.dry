@@ -74,7 +74,7 @@ Mass rallies are a common feature of <span style="color: #3F7BC1;">social libera
 
 - @blud_struggle: The struggle of the bludish people against the discriminatory establishment.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against <span style="color: #800080;">dictatorship</span> and <span style="color: #000000;">totalism</span>.
+- @democracy: Expanding our nascent democracy and defending it against <span style="color: #800080;">dictatorship</span> and <span style="color: #7A3C00;">totalism</span>.
 - @target_soll: Target Soll's cult of personality.
 - @free_market: Argue for the continuation of Alphonso's free market reforms.
 - @nrp: Support the NRP economic plan!
@@ -99,7 +99,7 @@ The leftist message appeals to the organized workers, whose benefits are the acc
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); new_middle_pfjp += 4*(1-dissent) if democratization >= 3; workers_pfjp += 4*(1-dissent) if democratization >= 3; unemployed_pfjp += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3
 
-Our speakers defend the <span style="color: #800080;">rep</span><span style="color: #EDEDED;">ubli</span><span style="color: #DCCA4A;">can</span> system and rail against the <span style="color: #808080;">reactionaries</span> and <span style="color: #7A3C00;">authoritarians</span> who threaten it.
+Our speakers defend the <span style="color: #800080;">rep</span><span style="color: #A0A0A0;">ubli</span><span style="color: #DCCA4A;">can</span> system and rail against the <span style="color: #808080;">reactionaries</span> and <span style="color: #7A3C00;">authoritarians</span> who threaten it.
 
 [? if democratization < 3 : Talk of democracy does not excite the voters as much as more practical issues. But that may change; part of our job is to provide political education to the electorate. ?]
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the voters are enthusiastic about our message. ?]
