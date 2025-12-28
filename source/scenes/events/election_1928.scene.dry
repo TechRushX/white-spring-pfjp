@@ -264,7 +264,7 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#3f7bc1; outline: 2px; outline-style: solid;'> </div> !} **PFJP:** {!</td><td>!} **[+ pfjp_r +]%** {!</td><td>!} **[+ str_change_pfjp +]** {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000000'> </div> !} NFP: {!</td><td>!} [+ nfp_r +]% {!</td><td>!} [+ str_change_nfp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} NFP: {!</td><td>!} [+ nfp_r +]% {!</td><td>!} [+ str_change_nfp +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#E3000F'> </div> !} CPS: {!</td><td>!} [+ cps_r +]% {!</td><td>!} [+ str_change_cps +] {!</td></tr>!}
 
