@@ -27,12 +27,6 @@ Resources available: [+ resources +]
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Lachaven Mayor: <span style="color: #3F7BC1;">**PFJP**</span>
-
-Holsord Mayor: <span style="color: #800080;">**USP**</span>
-
-Jen Mayor: <span style="color: #7A3C00;">**NFP**</span>
-
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -71,6 +65,15 @@ Economic growth: [+ economic_growth_2 +]%
 # = Public Opinion
 
 @politics
+
+= Local Governments
+
+Holsord Mayor: <span style="color: #800080;">**USP**</span>
+
+Lachaven Mayor: <span style="color: #3F7BC1;">**PFJP**</span>
+
+Jen Mayor: <span style="color: #7A3C00;">**NFP**</span>
+
 
 = Inter-party Relations
 
