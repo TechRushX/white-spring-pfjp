@@ -59,6 +59,7 @@ Q.sebastian_resigned = 0
 
 Q.tv = 0
 Q.lach_times_influence = 5
+Q.lach_times_radical = 0
 
 // How hostile the left is towards our party
 Q.cps_hostility = 2
