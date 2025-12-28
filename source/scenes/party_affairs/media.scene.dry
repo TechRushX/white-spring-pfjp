@@ -11,7 +11,6 @@ card-image: img/sangerbund.jpg
 
 The Lachaven Times runs a veritable media empire, with many customers throughout every Sordish city and region. We could use Sebastian's connections within it for various purposes...
 
-- @media
 - @commercial
 - @campaign
 - @influence
@@ -54,7 +53,7 @@ We have increased our influence within the news organization. Sebastian and the 
 @anti_establishment
 title: Push the newspaper towards anti-establishment and anti-<span style="color: #800080;">sollist</span> rethoric.
 choose-if: lach_times_influence >= 6
-unavailiable-subtitle: Our influence is not high enough.
+unavailable-subtitle: Our influence is not high enough.
 on-arrival: lach_times_radical += 1; lach_times_influence -= 1; new_middle_usp -= 3; old_middle_usp -= 2; workers_usp -= 2
 
 The Lachaven Times is now more hostile towards the government and the USP, resembling journalism akin to *The Radical*. However, the staff is worried about potential repercussions, given Sordland's reputation with press freedom - reducing our ability to influence them.
