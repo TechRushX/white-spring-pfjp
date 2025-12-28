@@ -200,17 +200,17 @@ if (Q.sapd_formed && Q.sapd_r) {
             });
 }
 data = data.concat([
-  {
-        "id": "nfp",
-        "legend": "NFP",
-        "name": "NFP",
-        "seats": Math.round(Q.nfp_r*5),
-    },
     {
         "id": "pfjp",
         "legend": "PFJP",
         "name": "PFJP",
         "seats": Math.round(Q.pfjp_r*5),
+    },
+    {
+        "id": "nfp",
+        "legend": "NFP",
+        "name": "NFP",
+        "seats": Math.round(Q.nfp_r*5),
     },
     {
         "id": "cps",
