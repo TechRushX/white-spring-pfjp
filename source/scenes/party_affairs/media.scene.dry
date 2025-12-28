@@ -5,7 +5,7 @@ tags: party_affairs
 view-if: media_timer <= 0
 on-arrival: month_actions += 1; media_timer += 6;
 card-image: img/sangerbund.jpg
-#subtitle: Setting the direction for our newspapers and radio.
+#subtitle: Setting the direction for our newspapers and TV.
 
 = Media
 
@@ -15,6 +15,7 @@ The Lachaven Times runs a veritable media empire, with many customers throughout
 - @commercial
 - @campaign
 - @influence
+- @anti_establishment
 - @tv
 - @tv_2
 - @tv_3
@@ -26,16 +27,18 @@ The Lachaven Times runs a veritable media empire, with many customers throughout
 @commercial
 title: Make our newspapers more commercialized by broadening their appeal beyond the middle class.
 subtitle: This might upset ideological purists, but it may bring in more funds and perhaps push the working class away from socialist views.
-on-arrival: resources += 1; commercialized_media += 1; workers_pfjp += 4*(1 - dissent); left_dissent += 10; labor_dissent += 10
+on-arrival: resources += 1; commercialized_media += 1; workers_pfjp += 4*(1 - dissent); liberal_dissent += 10
 
-Our commercialized newspapers are able to bring in more funds. However, the left and labor factions express their displeasure.
+Our commercialized newspapers are able to bring in more funds. However, the liberals express their displeasure.
+
 
 @campaign
-title: The purpose of our media is to elect more Liberals.
+title: The purpose of our media is to elect more <span style="color: #3F7BC1;">Liberals</span>.
 subtitle: Our newspapers will focus on the electoral campaign.
 on-arrival: campaign_media += 1; new_middle_pfjp += 4*(1 - dissent); old_middle_pfjp += 2*(1-dissent)
 
 Our campaign media is mostly reaching the middle class who are already saturated with Reformist propaganda, but it must be doing *something*, or at least that is what we hope.
+
 
 @influence
 title: Increase our influence in the Lachaven Times.
@@ -46,6 +49,18 @@ view-if: sebastian_resigned == 0
 on-arrival: lachaven_times_influence += 1; resources -= 1
 
 We have increased our influence within the news organization. Sebastian and the Moderates are pleased, and their strength within the party only grows.
+
+
+@anti_establishment
+title: Push the newspaper towards anti-establishment and anti-<span style="color: #800080;">sollist</span> rethoric.
+choose-if: lach_times_influence >= 6
+unavailiable-subtitle: Our influence is not high enough.
+on-arrival: lach_times_radical += 1; lach_times_influence -= 1; new_middle_usp -= 3; old_middle_usp -= 2; workers_usp -= 2
+
+The Lachaven Times is now more hostile towards the government and the USP, resembling journalism akin to *The Radical*. However, the staff is worried about potential repercussions, given Sordland's reputation with press freedom - reducing our ability to influence them.
+
+Still, this will make it easier to push the Lachaven Times to be more critical of future governments and their potential mistakes or controversies.
+
 
 @tv
 title: Why not fund a TV station?
