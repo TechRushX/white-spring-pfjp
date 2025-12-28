@@ -45,7 +45,7 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: sebastian_resigned == 0
-on-arrival: lachaven_times_influence += 1; resources -= 1
+on-arrival: lach_times_influence += 1; resources -= 1
 
 We have increased our influence within the news organization. Sebastian and the Moderates are pleased, and their strength within the party only grows.
 
