@@ -6,62 +6,51 @@ view-if: international_relations_timer <= 0
 on-arrival: month_actions += 1; international_relations_timer += 12;
 card-image: img/international.jpg
 max-visits: 4
-#subtitle: Building ties with our fraternal socialist parties.
+#subtitle: Building ties with our fraternal liberal parties.
 
-At the Labor and Socialist International, we can forge contacts with our fraternal socialist parties in Europe and across the world.
+As the main <span style="color: #3F7BC1;">**liberal**</span> force inside Sordland, we can forge contacts with our fraternal parties in Merkopa and across the world.
 
-- @fr_uk: Build relationships with the French SFIO and British Labour Party to move their governments in Germany's favor.
-- @austria: Learn organization and street fighting from the Austrian SDAPÖ.
-- @scandi: Learn the path of economics and reform from the Scandinavian social democrats.
-- @comintern: Forget the second international - embed a spy in the Comintern's conference.
-- @america: Contact the Socialist party of America.
+- @agnolia: Build connections with the Agnolian NDU to move Van Hoorten in our party's favor.
+- @qinal: Learn organization and street fighting from the Qinali.
+- @lespia: Boost our relationship with the <span style="color: #D3C24D;">*Democrazia Lespia*</span> party.
+- @arcasia: Secretly contact the <span style="color: #0087DC;">**Arcasians**</span>.
 - @return: We do not need international contacts at the moment.
 - @easy_discard
 - @cancel_advisor_action
 
-@fr_uk
+@agnolia
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; west_relation += 1; reformist_strength += 5; pacifism += 1; moderate_plan_support += 1
+on-arrival: resources -= 1; agnolia_pfjp += 1; moderates_strength += 5
 
-The socialists of France and Britain can influence their governments to be friendlier towards Germany. Hopefully they will reduce our reparations burden.
+We can influence the centrists of Agnolia to potentially downplay the USP's foreign policy achievements and foster good-will if we ever enter government.
 
-@austria
-subtitle: -1 resources [? if austrian_parliament_seen and not austrian_civil_war_seen: - We will also help the Austrians oppose their dictatorship. ?]
+@qinal
+subtitle: -1 resources
+view-if: streetfighting == 1 and new_youth == 1
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 audio: shuffle music/communist/workers_of_vienna_normalized.mp3
-on-arrival: left_strength += 5; radicalization += 1; rb_militancy += 0.03; resources -= 1; austria_relation += 1; sdapo_strength += 1 if austrian_parliament_seen = 1
+on-arrival: ys_militancy += 0.03
 
-Our Reichsbanner can learn much in paramilitary organization and training from the Austrian Republikanischer Schutzbund (Republican Protection Units), the paramilitary branch of the Austrian social democrats.
+Our youth organization can learn much in paramilitary organization and training from the Qinali reformists, given the country's turbulent and politically violent history. 
 
-[? if austrian_parliament_seen and not austrian_civil_war_seen: We are also helping the Austrian Social Democratic Worker's Party build up their resources in preparation for a future struggle, legally and illegally. ?]
-
-
-@scandi
+@lespia
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: reformist_strength += 8; wtb_support += 1; resources -= 1; moderate_plan_support += 1
+on-arrival: liberal_strength += 8; resources -= 1; lespia_pfjp += 1
 
-The programs of the Nordic socialists involve active government intervention in the economy. We can learn from their economic strategies, and how they moved beyond their working-class base to attract a broader set of constituents.
+<span style="color: #D3C24D;">Lespia</span> is a wealthy, powerful nation, and one that has recently attracted the USP's interest in pursuing of increased collaboration. We can potentially sabotage negotiations if we were to build up our relations enough and prove to Alvarez we are a better <span style="color: #3F7BC1;">liberal</span> alternative.
 
-@comintern
-subtitle: -1 resources
+@arcasia
+subtitle: -1 resources. Well, well, well...
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; kpd_relation += 5*(1-dissent); communist_coalition += 1 if comintern_seen == 0; comintern_seen += 1
+on-arrival: resources -= 1; arcasia_pfjp += 1
 
-The Stalinists of the KPD insists on calling us "social fascists", suggesting that we social democrats are as bad or worse than actual fascists. Needless to say, this is not good for our relationship with the Communists. By observing the Comintern, we can better understand the KPD, enabling us to potentially improve relations, or counter the KPD if it may come to that.
-
-@america
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1
-
-The Socialist Party of America is tiny and has limited support. There is not much we can do for them, and conversely, not much they can do for us.
+We establish a secret line of contact through an <span style="color: #0087DC;">Arcasian</span> spy, thus proving our worth to Walker and why we should be his preffered party for the Presidency.
 
 @reduce
 
