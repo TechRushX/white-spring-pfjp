@@ -10,11 +10,11 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The PFJP cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. With the increasing pluralism in Sordland, coalition building is more common both at the local and national level. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The <span style="color: #3F7BC1;">**PFJP**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. With the increasing pluralism in Sordland, coalition building is more common both at the local and national level. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @independents: Strengthen our bonds with the socialist and bludish independent MPs.
-- @wpb: Strengthen our bonds with the Workers' Party of Bludia.
-- @cps: Work towards repairing relationships with the Communist Party.
+- @independents: Strengthen our bonds with the <span style="color: #c00000;">**socialist**</span> and <span style="color: #D3C24D;">**bludish**</span> independent MPs.
+- @wpb: Strengthen our bonds with the <span style="color: #D3C24D;">**Workers' Party of Bludia**</span>.
+- @cps: Work towards repairing relationships with the <span style="color: #7A3C00;">**Communist Party**</span>.
 - @pfjp_alone: The PFJP can stand alone for now.
 - @easy_discard
 
@@ -29,12 +29,12 @@ go-to: cps_1 if cps_hostility > 0; cps_2 if cps_hostility <= 0
 @cps_1
 on-arrival: cps_relation += 5*(1 - dissent); cps_hostility -= 1
 
-Relations between us and the communists are tense, ever since the shift of our party to the right and the subsequent departure of Stahler. However, we can still take efforts to reduce the level of hostility between us.
+Relations between us and the <span style="color: #7A3C00;">**communists**</span> are tense, ever since the shift of our party to the right and the subsequent departure of Stahler. However, we can still take efforts to reduce the level of hostility between us.
 
 @cps_2
 on-arrival: cps_relation += 10*(1 - dissent); cps_hostility -= 1
 
-As the level of hostility between us and the communists has significantly reduced, this has made improvement of relations much easier.
+As the level of hostility between us and the <span style="color: #7A3C00;">**communists**</span> has significantly reduced, this has made improvement of relations much easier.
 
 @independents
 subtitle: -1 resources
@@ -46,12 +46,12 @@ go-to: ind_cooperative if sebastian_pfjp_leader == 0; ind_hostile if sebastian_p
 @ind_cooperative
 on-arrival: ind_relation += 5*(1 - dissent)
 
-Due to our commitment to bludish rights, the independents are more inclined to cooperate with us. However, our capitalist platform is slowing down our efforts.
+Due to our commitment to <span style="color: #D3C24D;">**bludish**</span> rights, the independents are more inclined to cooperate with us. However, our capitalist platform is slowing down our efforts.
 
 @ind_hostile
 on-arrival: ind_relation += 2*(1 - dissent)
 
-The electing of Harringston has turned the independents against us, who are wary of our lack of support for equal rights of the bludish people. This is making fostering of good will almost impossible. 
+The electing of Harringston has turned the independents against us, who are wary of our lack of support for equal rights of the <span style="color: #D3C24D;">**bludish**</span> people. This is making fostering of good will almost impossible. 
 
 @ind_friendly
 on-arrival: ind_relation += 8*(1 - dissent); ind_hostility -= 1
@@ -73,12 +73,12 @@ We have succesfully reduced the tensions between our parties. Improving relation
 @wpb_unfriendly
 on-arrival: wpb_relation += 5*(1 - dissent); wpb_hostility -= 1
 
-The low level of trust between us and the WPB makes building friendly relations difficult, but not impossible.
+The low level of trust between us and the <span style="color: #D3C24D;">**WPB**</span> makes building friendly relations difficult, but not impossible.
 
 @wpb_hostile
 on-arrival: wpb_relation += 2*(1 - dissent)
 
-Sebastian has shown a rather opposing stance to advancing bludish rights, making any sort of cooperation between us and the WPB implausible.
+Sebastian has shown a rather opposing stance to advancing <span style="color: #D3C24D;">**BLUDISH**</span> rights, making any sort of cooperation between us and the WPB implausible.
 
 @pfjp_alone
 
