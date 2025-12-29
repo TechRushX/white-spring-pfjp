@@ -13,28 +13,28 @@ In our media and campaign materials, who should we consider as our main opponent
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @extremists: The extremist parties of the far right and left - the CPS and NFP.
-- @usp: The USP, our usual rivals.
-- @nfp: The nationalist NFP.
-- @leftists: The leftist parties - the CPS and WPB.
+- @extremists: The extremist parties of the far right and left - the <span style="color: #7A3C00;">CPS</span> and <span style="color: #7A3C00;">NFP</span>.
+- @usp: The <span style="color: #800080;">USP</span>, our usual rivals.
+- @nfp: The nationalist <span style="color: #7A3C00;">NFP</span>.
+- @leftists: The leftist parties - the <span style="color: #7A3C00;">CPS</span> and style="color: #D3C24D;">WPB</span>.
 - @easy_discard
 
 @extremists
-on-arrival: enemies = "extremists"; center_strength += 5; reformist_strength += 5; left_dissent += 5; workers_cps -= 2; workers_nfp -= 2; cps_relation -= 10; business_relations += 1
+on-arrival: enemies = "extremists"; new_middle_cps -= 2; new_middle_nfp -= 2; cps_relation -= 10; business_relations += 1; progressive_dissent += 5
 
-Attacking the far right and left is popular among all but the progressive wing of our party, who would prefer to be fighting the nationalists only. This might also hamper our ability to reconcile with the CPS in the future.
+Attacking the far right and left is popular among all but the progressive wing of our party, who would prefer to be fighting the nationalists only. This might also hamper our ability to reconcile with the <span style="color: #7A3C00;">CPS</span> in the future.
 
 @usp
-on-arrival: enemies = "USP"; left_strength += 5; left_dissent -= 5; workers_usp -= 3; pro_soll_const -= 2
+on-arrival: enemies = "USP"; new_middle_usp -= 3; pro_soll_const -= 2; liberal_dissent += 3; business_relations -= 1
 
-Attacking the USP is popular among the entire party, although the progressives consider the NFP to be just as dangerous, while the liberals are somewhat critical of our lack of response to the CPS. Our corporate donors are also skeptical of our lack of commitment to anti-communism, and may potentially abandon us if we don't prove we will stick to our capitalist platform.
+Attacking the <span style="color: #800080;">USP</span> is popular among the entire party, although the progressives consider the <span style="color: #7A3C00;">NFP</span>. to be just as dangerous, while the liberals are somewhat critical of our lack of response to the <span style="color: #7A3C00;">CPS</span>. Our corporate donors are also skeptical of our lack of commitment to anti-communism, and may potentially abandon us if we don't prove we will stick to our capitalist platform.
 
 @nfp
-on-arrival: enemies = "NFP"; neorevisionist_strength += 5; workers_nfp -= 4
+on-arrival: enemies = "NFP"; workers_nfp -= 4; progressive_strength += 3
 
-Almost nobody objects to the smear campaign on the NFP. Lately, they've proven to be an equal, if not bigger threat to reformism than the USP.
+Almost nobody objects to the smear campaign on the <span style="color: #7A3C00;">NFP</span>. Lately, they've proven to be an equal, if not bigger threat to reformism than the <span style="color: #800080;">USP</span>.
 
 @leftists
-on-arrival: enemies = "leftists"; cps_relation -= 15; wpb_relation -= 15; workers_cps -= 2; workers_wpb -= 2; business_relations += 3; cps_hostility += 1; wpb_hostility += 1
+on-arrival: enemies = "leftists"; threat -= 2; progressive_dissent += 10; cps_relation -= 15; wpb_relation -= 15; new_middle_cps -= 2; new_middle_wpb -= 2; business_relations += 3; cps_hostility += 1; wpb_hostility += 1
 
-Attacking the left is supported by all but the most progressive party members, and wins us some measure of approval among the bourgeois donors. However, if we are to reconcile with the CPS and WPB, this may not be the best choice.
+Attacking the left is supported by all but the most progressive party members, and wins us some measure of approval among the bourgeois donors. However, if we are to reconcile with the <span style="color: #7A3C00;">CPS</span> and style="color: #D3C24D;">WPB</span>, this may not be the best choice.
