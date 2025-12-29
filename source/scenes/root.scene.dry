@@ -61,10 +61,18 @@ Q.tv = 0
 Q.lach_times_influence = 5
 Q.lach_times_radical = 0
 
+
+// Foreign relations party card
+Q.agnolia_pfjp = 0
+Q.lespia_pfjp = 0
+Q.arcasia_pfjp = 0
+
+
 // How hostile the left is towards our party
 Q.cps_hostility = 2
 Q.wpb_hostility = 1
 Q.ind_hostility = 1
+
 
 // corporate stuff
 Q.business_relations = 5
