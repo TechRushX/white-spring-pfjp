@@ -92,7 +92,7 @@ Q.culturual_events = 2
 Q.rayne_pop = 0
 Q.const_support = 0
 Q.const_passed = 0
-Q.const_vote = 0
+Q.const_voted = 0
 Q.unrest = 0
 
 Q.streetfighting = 0
