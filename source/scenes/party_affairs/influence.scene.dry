@@ -12,9 +12,9 @@ As a major political force in the country, we have the power to influence certai
 
 Where do we increase our influence?
 
-- @usp_reform: In the USP reformist faction.
-- @centre_judges: In the centrist wing of the Supreme Court.
-- @oligarchs: In the Oligarchs and the Lotherberg Group.
+- @usp_reform: In the <span style="color: #800080;">**USP**</span> <span style="color: #3F7BC1;">reformist</span> faction.
+- @centre_judges: In the <span style="color: #D3C24D;">**centrist**</span> wing of the Supreme Court.
+- @oligarchs: In the <span style="color: #0087DC;">**Oligarchs**</span> and the Lotherberg Group.
 - @easy_discard
 - @cancel_advisor_action
 
@@ -24,7 +24,7 @@ unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
 on-arrival: resources -= 1; clavin_influence += 1
 
-We increase our influence over Clavin and his fellow party members, which might prove advantageous in controlling the USP from within and with constitutional reforms.
+We increase our influence over Clavin and his fellow party members, which might prove advantageous in controlling the <span style="color: #800080;">**USP**</span> from within and with constitutional reforms.
 
 
 @centre_judges
@@ -33,7 +33,7 @@ unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
 on-arrival: resources -= 1; edmonds_influence += 1
 
-Increasing our influence over Edmonds and her allies in the judiciary might come in handy for the constitution, and for shaping other judicial cases towards a prefferable outcome.
+Increasing our influence over Edmonds and her allies in the judiciary will come in handy [? if const_done == 0: for the constitution, and ?] for shaping other judicial cases towards a prefferable outcome.
 
 
 @oligarchs
@@ -42,5 +42,5 @@ unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
 on-arrival: resources -= 1; progressive_dissent += 10; marcel_relation += 1; tusk_relation += 1
 
-We have increased our influence in the oligarchs, which helps sway them away from other bourgeoisie parties, like the USP or NFP. The progressives condemn this, arguing we should not fight fire with fire, but instead limit corporate influence as a whole. 
+We have increased our influence in the <span style="color: #0087DC;">**oligarchs**</span>, which helps sway them away from other bourgeoisie parties, like the <span style="color: #800080;">**USP**</span> or <span style="color: #7A3C00;">**NFP**</span>. The progressives condemn this, arguing we should not fight fire with fire, but instead limit corporate influence as a whole. 
 
